@@ -6,9 +6,13 @@ import (
 	"net/rpc"
 )
 
+func init() {
+	Dbconnection()
+}
+
 func main() {
-	service1 := new(Service)
-	rpc.Register(service1)
+	serviceObj := new(Service)
+	rpc.Register(serviceObj)
 	rpc.HandleHTTP()
 	listener, err := net.Listen("tcp", ":8000")
 	if err != nil {

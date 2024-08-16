@@ -1,4 +1,4 @@
-module server
+module github.com/balasl342/go-simple-rpc-calls/server
 
 go 1.20
 
