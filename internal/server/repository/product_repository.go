@@ -7,6 +7,12 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+// ProductRepositoryInterface defines the methods that our repository must implement.
+type ProductRepositoryInterface interface {
+	CreateProduct(product *shared.Product) error
+	GetProductById(prod shared.Product, id int) (shared.Product, error)
+}
+
 type ProductRepository struct {
 	Db *gorm.DB
 }
