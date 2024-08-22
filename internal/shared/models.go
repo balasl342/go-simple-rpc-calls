@@ -6,5 +6,3 @@ type Product struct {
 	ProdID int    `json:"product_id" gorm:"column:product_id"`
 	Price  int    `json:"product_price" gorm:"column:product_price"`
 }
-
-type Service struct{}

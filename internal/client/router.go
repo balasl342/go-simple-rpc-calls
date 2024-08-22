@@ -13,9 +13,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-type ServiceWrapper struct {
-	Service shared.Service
-}
+type ServiceWrapper struct{}
 
 // Create product
 func (*ServiceWrapper) CreateProducts(w http.ResponseWriter, r *http.Request) {
