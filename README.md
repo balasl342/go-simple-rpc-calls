@@ -120,6 +120,11 @@ The application includes sample RPC methods, ```CreateProducts and GetProductsBy
   
 - **Database Operations:** To add or modify database operations, update the ```internal/server/repository/``` package.
 
+### Testing
+
+You can add tests to ensure that your RPC methods and database operations work correctly. Testing files can be placed in the respective directories with a ```_test.go``` suffix.
+To run it use the command -> go test -v ./...
+
 ### License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
